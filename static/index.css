@@ -1,0 +1,84 @@
+.container {
+   
+    width: 985px;
+    max-width: 100000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -55px;
+   
+    
+    
+}
+
+.flexbox {
+   
+    display: flex;
+    flex-direction: row; /* Change to 'column' if needed */
+    justify-content: space-between; /* Adjust as desired */
+    align-items: center; /* Adjust as desired */
+    flex-wrap: wrap;
+    background-color: burlywood;
+    margin-left: -40px;
+    height: 50px;
+   
+
+}
+.carousel-caption{
+    position: absolute;
+    left: -305px;
+    top: -100px;
+}
+
+a.btn-primary{
+    text-decoration: none;
+    background-color:orange;
+    border-radius: 4cm;
+    border-color: aqua;
+}
+
+a.btn-primary:hover{
+   
+    background-color: whitesmoke;
+    color: black;
+    transform: translateY(3.3px);
+
+}
+.card {
+    margin-top: 5%;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+    background-color: black;
+    border-radius: 10%;
+   
+    /* background-color: green; */
+    /* Other style changes here */
+}
+.card .card-title,
+.card .card-text {
+    transition: color 0.3s ease-in;
+}
+.card:hover .card-title,
+.card:hover .card-text {
+    color: white /* Change to your desired color */
+}
+.card.img:hover{
+    border-radius: 5%;
+}
+.sidenav{
+    position: relative;
+    
+    left: -20px;
+
+}
+.carousel-fade{
+    position: relative;
+    top: -21px;
+left: 15px;
+
+}
+.row{
+    position: relative;
+    top: -30px;
+}

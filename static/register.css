@@ -1,0 +1,30 @@
+
+    
+    input[type="submit"]:hover {
+        background-color:red;
+        color: black;
+        
+    }
+input.submit{
+    background-color: orange;
+    color: white;
+    width: max-content;
+    border-radius: 4cm;
+    border-color: tomato;
+}
+input.submit:hover{
+    background-color: olivedrab;
+    color: black;
+    cursor: progress;
+    border-color: lightgreen;
+    transform: translatex(6.5px);
+
+}
+
+.image:hover{
+   
+    transform: translatex(4.5px);
+
+
+}
+    

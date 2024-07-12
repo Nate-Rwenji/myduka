@@ -1,0 +1,61 @@
+body{
+    /* background-image: url("/static/images/ONP.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color:white;
+    color: black;
+}
+.container {
+    position: relative;
+    top:-430px;
+    width: 985px;
+    max-width: 100000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -55px;
+   
+    
+    
+}
+
+.flexbox {
+    position: fixed; 
+    top: 0px;
+    top:-525px;
+    left: 5px;
+    display: flex;
+    flex-direction: row; /* Change to 'column' if needed */
+    justify-content: space-between; /* Adjust as desired */
+    align-items: center; /* Adjust as desired */
+     background-color:bisque; 
+    /* top: 30px; */
+    margin-left: -40px;
+    height: 50px;
+
+}
+button.btn btn-primary{
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 4cm;
+    border: 5cm;
+}
+button .btn btn-primary:hover{
+    background-color: black;
+    color: white;
+
+    border: 5cm;
+    
+}
+button.butt{
+    background-color: tomato;
+    border-radius:4cm ;
+    border-color: aqua;
+}
+button.butt:hover{
+    background-color: indianred;
+}
+button.butt::after{
+    background-color: black;
+    color: aliceblue;
+}

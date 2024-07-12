@@ -1,0 +1,46 @@
+body{
+    /* background-image: url("/static/images/OIPz.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: white;
+    color: black;
+}
+.container {
+    position: relative;
+    top: -400px;
+    width: 985px;
+    max-width: 100000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -55px;
+   
+    
+    
+}
+
+.flexbox {
+    position: fixed;
+    top:0;
+    display: flex;
+    flex-direction: row; /* Change to 'column' if needed */
+    justify-content: space-between; /* Adjust as desired */
+    align-items: center; /* Adjust as desired */
+    background-color:bisque;
+    color: aliceblue;
+    top: 30px;
+    margin-left: -40px;
+    height: 50px;
+
+}
+button.btn-primary{
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 4cm;
+    border-color: orangered;
+    width: max-content;
+}
+button.btn-primary:hover{
+    background-color:lightblue;
+    color: black;
+    border-color: aquamarine;
+}

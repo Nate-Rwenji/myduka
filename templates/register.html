@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/register.css">
+{% endblock %}
+{% block content %}
+<div class="form" style="padding: 10%;">
+        <img class="image"  src="/static/images/login img2.jpg" alt="" style="height: 50px;margin-left: 90px;padding-left: 25%;">
+      <h4 style="padding-left: 25%;">Welcome to Myduka</h4>
+      <h6 style="font-size: small;font-weight: lighter;padding-left: 35%;">Fill the fields to register:</h6>
+        <form action="/register" method="post" style="padding-left: 13%;">
+          <!-- <label for="fullname">FullName</label> -->
+          <input required type="full name" name="fname" id="full name" placeholder="Fullname" style="margin: 1%;width: 70%;padding: 1%;"><br>
+         
+          <!-- <label for="email">Email</label> -->
+          <input required type="email" name="email" id="email" placeholder="Email" style="margin: 1%;width: 70%;padding: 1%;"><br>
+          
+          <!-- <label for="password">Password</label> -->
+          <input required type="password" name="word" id="password" placeholder="Password" style="margin: 1%;width: 70%;padding: 1%;"><br>
+          <input type="submit" id="submit" value="Submit" class="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var current = null;
+  document.querySelector('#email').addEventListener('focus', function (e) {
+    if (current) current.pause();
+    current = anime({
+      targets: 'path',
+      strokeDashoffset: {
+        value: 0,
+        duration: 700,
+        easing: 'easeOutQuart'
+      },
+      strokeDasharray: {
+        value: '240 1386',
+        duration: 700,
+        easing: 'easeOutQuart'
+      }
+    });
+  });
+  document.querySelector('#password').addEventListener('focus', function (e) {
+    if (current) current.pause();
+    current = anime({
+      targets: 'path',
+      strokeDashoffset: {
+        value: -336,
+        duration: 700,
+        easing: 'easeOutQuart'
+      },
+      strokeDasharray: {
+        value: '240 1386',
+        duration: 700,
+        easing: 'easeOutQuart'
+      }
+    });
+  });
+  document.querySelector('#submit').addEventListener('focus', function (e) {
+    if (current) current.pause();
+    current = anime({
+      targets: 'path',
+      strokeDashoffset: {
+        value: -730,
+        duration: 700,
+        easing: 'easeOutQuart'
+      },
+      strokeDasharray: {
+        value: '530 1386',
+        duration: 700,
+        easing: 'easeOutQuart'
+      }
+    });
+  });
+
+</script>
+
+{% endblock %}

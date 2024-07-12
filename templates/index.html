@@ -1,0 +1,87 @@
+{% extends "base.html"%}
+{% block title %}Landing Page{% endblock %}
+{% block head%}
+<link rel="stylesheet" href="/static/index.css">
+{% endblock %}
+{% block content %}
+<!-- <h1>Home Page</h1> -->
+<div class="container">
+  <div class="flexbox">
+      <div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <a href="/">Home</a>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/products">Products</a>
+          <a href="/sales">Sales</a>
+          <a href="/login">Log In</a>
+          <a href="/register">Register</a>
+          <a href="/logout">Log Out</a>
+        </div>
+        </div> 
+      <div style="font-weight: bolder;font-size: larger;font-style: inherit;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Home</div>
+      <div><a href="/index">My Duka</a></div>
+     </div>
+    </div>
+
+  <div id="carouselExampleFade" class="carousel-fade" style="width: 110%;margin-left: -35px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/OIPcarousel4.jpeg" class="d-block w-100" alt="..."height="400px" width="500px">
+        <div class="carousel-caption">
+          <h1 style="color: white;font-family: 'Times New Roman', Times, serif;flex-direction: row;">eat green to get lean</h6>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/OIP.carousel2.jpeg" class="d-block w-100" alt="..." height="400px" width="500px">
+        <div class="carousel-caption">
+          <h1 style="color: white;font-family: 'Times New Roman', Times, serif;flex-direction: row;">Nice to meat you!</h1>
+        </div>
+      </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row" style="margin-left: -40px;">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="/static/images/OIPproducts.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bolder;">VIEW OUR PRODUCTS:</h5>
+          <p class="card-text" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Add a Product and surely make your day productive .</p>
+          <a href="/products" class="btn btn-primary">PRODUCTS</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="/static/images/OIP.sales.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"style="font-weight: bolder;">SALES:</h5>
+          <p class="card-text" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Make a Sale to make you happier and your day better.</p>
+          <a href="/sales" class="btn btn-primary">SALES</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mb-3 mb-sm-0">
+      <div class="card">
+        <img src="/static/images/OIP.dashboard.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bolder;">DASHBOARD:</h5>
+          <p class="card-text" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Analyse the data,to track the progress made.</p>
+          <a href="/dashboard" class="btn btn-primary">DASHBOARD</a>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+{% endblock %}
